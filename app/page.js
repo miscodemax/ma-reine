@@ -55,7 +55,7 @@ const RomanticJourney = () => {
     {
       icon: Sparkles,
       title: "Flashback",
-      content: "Tu te souviens de la 3e ? On se parlait, on se chambrait, tranquille... J'me disais que j'aurais le temps. Spoiler : j'ai eu tort 😅",
+      content: "Tu te souviens de la 3e ? On se parlait, on se chambrait, tranquille... Je te trouvais belle, gentille, intelligente, joviale. J'me disais que j'aurais le temps. Spoiler : j'ai eu tort 😅",
       buttonText: "Et depuis ?",
       gradient: "from-blue-600 via-cyan-500 to-teal-400",
       bgGradient: "from-blue-900/30 via-cyan-900/20 to-teal-900/30",
