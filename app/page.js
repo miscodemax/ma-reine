@@ -162,6 +162,13 @@ const RomanticJourney = () => {
   const Icon = page.icon;
   const isFinalPage = currentPage === pages.length - 1;
 
+  const sendWhatsAppMessage = () => {
+  const message = encodeURIComponent("Ok, t'as gagné");
+  const phone = "221764234135"; // sans le + pour WhatsApp web
+  window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
+};
+
+
   return (
     <div className="relative min-h-screen bg-black overflow-y-auto overflow-x-hidden scrollbar-custom">
       <div ref={bgRef} className="fixed inset-0 w-screen h-full overflow-hidden">
@@ -282,17 +289,24 @@ const RomanticJourney = () => {
 
           <div className="flex justify-center">
             <button
-              onClick={handleNext}
-              disabled={isAnimating}
-              className={`group relative px-8 sm:px-14 md:px-16 py-4 sm:py-5 md:py-6 rounded-full bg-gradient-to-r ${page.gradient} text-white font-bold text-base sm:text-lg md:text-xl shadow-2xl transform hover:scale-110 active:scale-95 transition-all duration-300 overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed border-2 border-white/20`}
-            >
-              <span className="relative z-10 flex items-center gap-3">
-                {page.buttonText}
-                <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-2 transition-transform duration-300" />
-              </span>
-              <div className="absolute inset-0 bg-white/30 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
-            </button>
+  onClick={() => {
+    if (isFinalPage) {
+      sendWhatsAppMessage();
+    } else {
+      handleNext();
+    }
+  }}
+  disabled={isAnimating}
+  className={`group relative px-8 sm:px-14 md:px-16 py-4 sm:py-5 md:py-6 rounded-full bg-gradient-to-r ${page.gradient} text-white font-bold text-base sm:text-lg md:text-xl shadow-2xl transform hover:scale-110 active:scale-95 transition-all duration-300 overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed border-2 border-white/20`}
+>
+  <span className="relative z-10 flex items-center gap-3">
+    {page.buttonText}
+    <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-2 transition-transform duration-300" />
+  </span>
+  <div className="absolute inset-0 bg-white/30 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
+</button>
+
           </div>
 
           {isFinalPage && (
