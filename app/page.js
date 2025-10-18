@@ -96,7 +96,7 @@ const RomanticJourney = () => {
     {
       icon: Moon,
       title: "Ma merdeuse préférée",
-      content: "Tout ce que je veux, c'est te voir sourire. Être là, peu importe le rôle que tu m'accordes.\nMême si, pour l'instant, c'est juste 'le pote relou mais cool'.\nEt ouais, j'espère qu'un jour, j'aurai une place un peu plus près de ton cœur.",
+      content: "Tout ce que je veux, c'est te voir sourire, ecouter ta belle voix, contempler ta beauté. Être là, peu importe le rôle que tu m'accordes.\nMême si, pour l'instant, c'est juste 'le pote relou mais cool'.\nEt ouais, j'espère qu'un jour, j'aurai une place un peu plus près de ton cœur.",
       buttonText: "T'as fini ton speech ? 😅",
       gradient: "from-slate-700 via-indigo-600 to-purple-600",
       bgGradient: "from-slate-900/30 via-indigo-900/20 to-purple-900/30",
