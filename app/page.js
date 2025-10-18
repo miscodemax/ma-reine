@@ -44,7 +44,7 @@ const RomanticJourney = () => {
   const pages = [
     {
       icon: MessageCircle,
-      title: "Hey.",
+      title: "Hey. Mamy c'est pour toi",
       content: "Respire, c'est pas une nouvelle déclaration 😅 Promis, pas de drama cette fois.\nJuste moi, et un petit truc que j'ai codé pour toi.",
       buttonText: "Ok, montre-moi ton délire.",
       gradient: "from-purple-600 via-pink-500 to-red-500",
@@ -95,7 +95,7 @@ const RomanticJourney = () => {
     },
     {
       icon: Moon,
-      title: "La promesse douce",
+      title: "Ma merdeuse préférée",
       content: "Tout ce que je veux, c'est te voir sourire. Être là, peu importe le rôle que tu m'accordes.\nMême si, pour l'instant, c'est juste 'le pote relou mais cool'.\nEt ouais, j'espère qu'un jour, j'aurai une place un peu plus près de ton cœur.",
       buttonText: "T'as fini ton speech ? 😅",
       gradient: "from-slate-700 via-indigo-600 to-purple-600",
